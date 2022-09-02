@@ -1,0 +1,211 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+main{
+  position: relative;
+  top: 70px;
+  font-family: Times;
+}
+
+body{
+  background-color: #f3fcfa;
+  background-image: repeating-linear-gradient(45deg, #0a7560 0, #1abc9c 1px, #f3fcfa 0, #f3fcfa 50%);
+  background-size: 20px 20px;
+}
+
+.logo{
+ align-items: left;
+ height: 50px;
+}
+
+.nav{
+  display: flex;
+  text-align: right;
+}
+
+.nav>li>a{
+  color: #4c4b4c;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.header_link{
+  color: #4c4b4c;
+  text-decoration: none;
+}
+  
+.container {
+   padding-top: 20px;
+}
+
+#meals, #meals_title{
+    border: double 5px #4ec4d3;
+    background-color: white;
+}
+
+#drinks, #drinks_title{
+  border: double 5px #128542;
+  background-color: white;
+}
+
+#teas, #teas_title{
+  border: double 5px #dfb84c;
+  background-color: white;
+}
+
+#sweets, #sweets_title{
+  border: double 5px rgb(233, 134, 151);
+  background-color: white;
+}
+
+#meals, #drinks, #teas, #sweets{
+  margin: 20px;
+  padding: 20px;
+}
+
+#meals_title, #drinks_title, #teas_title, #sweets_title{
+  margin: 20px;
+  padding: 5px 10px;
+  width: fit-content;
+  text-align: center;
+  color: rgb(2, 23, 80);
+  font-family: "Times";
+  border-radius: 30px;
+}
+
+.card-title{
+  color: #4c4b4c;
+  text-decoration: none;
+}
+
+.menu_image{
+  height: 200px;
+}
+
+.sweets_image{
+  width: 300px;
+}
+
+.drink_value, .sweets_set{
+  list-style: none;
+}
+
+.contents>.description>a{
+  text-align: left;
+}
+
+@media screen and (max-width:780px){
+  #meals, #drinks, #teas, #sweets{
+    margin: 10px;
+    padding: 10px;
+  }
+  #meals_title, #drinks_title, #teas_title, #sweets_title{
+   font-size: 10px;
+  }
+  .menu_image{
+    height: 150px;
+  }
+  
+  .sweets_image{
+    width: 200px;
+  }
+}
+
+#footer {
+  position: relative;
+  margin-top: 80px;
+  padding: 20px 20px;
+  background: #333;
+  color: #fff;
+}
+#footer a {
+  text-decoration: none;
+  color: #fff;
+} 
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer>.logo {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 26px;
+  font-weight: bold;
+}
+#footer>.address {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.nav-row {
+  display: flex;
+  margin-top: 20px;
+}
+
+#footer li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+#footer li:first-child {
+  margin-left: 0;
+}
+
+#footer .sns-nav {
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+#footer .sns-nav li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+#footer .sns-nav li:last-child {
+  margin-right: 0;
+}
+
+
+@media screen and (max-width: 780px) {
+  #footer>.logo {
+    font-size: 16px;
+  }
+  #footer>.address {
+    font-size: 12px;
+  }
+  .nav-row {
+    display: block;
+    margin-top: 15px;
+  }
+  #footer .nav {
+    font-size: 12px;
+  }
+  #footer .nav li {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  #footer .sns-nav {
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  #footer .sns-nav li {
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 18px;
+  }
+}

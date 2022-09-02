@@ -1,0 +1,84 @@
+<!-- PHPとDBの連携 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八十八夜|お問い合わせフォーム</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://pbs.twimg.com/profile_images/2808508398/96fadbe427017dad7f708c4d86cd7a03_400x400.png">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header_left">
+      <a href="../index.html"  class="logo"><img src="../logo.png"></a>
+    </div>
+    <ul class="nav">
+      <li><a class="header_link" href="../index.html">HOME</a></li>
+      <li><a class="header_link" href="../index.html#about">ABOUT</a></li>
+      <li><a class="header_link" href="../menu/index.html">MENU</a></li>
+      <li><a class="header_link" href="../index.html#access">ACCESS</a></li>
+      <li><a class="header_link" href="#">CONTACT</a></li>
+    </ul>
+  </header>
+    
+  <main>
+    <div class="box_con03">
+      <form method="post" action="mail.php">
+        <table class="formTable">
+          <h1>ご予約・お問い合わせ<br><br></h1>   
+            <tr>
+              <th>Name<span>必須</span></th>
+              <td><input size="20" type="text" class="wide" name="お名前" /></td>
+            </tr>
+            <tr>
+              <th>Tel（半角）<span>必須</span></th>
+              <td><input size="30" type="text" class="wide" name="電話番号" /></td>
+            </tr>
+            <tr>
+              <th>Mail（半角）</th>
+              <td><input size="30" type="text" class="wide" name="Email" /></td>
+            </tr>
+            <tr>
+              <th>Message<br /></th>
+              <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+            </tr>
+        </table>
+           
+        <p class="btn">
+          <span>
+            <input type="submit" value="　 確認 　" />
+          </span>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <p class="logo"><a href="../index.html">八十八夜</a></p>
+    <p class="address">
+      〒180-0005 東京都武蔵野市御殿山1-2-1　御殿山デュープレックスR’S 2階<br>
+      TEL : 0422-24-9490　/　FAX : 0422-24-9491
+    </p>
+    <div class="nav-row">
+      <ul class="sns-nav">
+        <li><a href="https://twitter.com/kichijoji_88ya">
+          <i class="fab fa-twitter"></i></a>
+        </li>
+        <li><a href="https://www.instagram.com/88yakichijoji_new/">
+          <i class="fab fa-instagram"></i></a>
+        </li>
+        <li><a href="https://www.facebook.com/88yakichi/">
+          <i class="fab fa-facebook"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
